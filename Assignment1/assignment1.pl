@@ -4,7 +4,7 @@
 % 7 September 2013                                                            %
 %                                                                             %
 % member: checks to see if the 'Element' is part of the 'List'                %
-* inter: creates a 'List 3' that is the intersection of 'List 1' and 'List 2' %
+% inter: creates a 'List 3' that is the intersection of 'List 1' and 'List 2' %
 % union: creates a 'List 3' that is the union of 'List 1' and 'List 2'        %
 % countZeros: counts the number of '0s' in the 'List'                         %
 % sumAll: adds all the numbers in the 'List'                                  %
@@ -34,7 +34,7 @@ countZeros( [] , 0 ).                 % if no numbers, then 0 zeros
 countZeros( [ 0 | Tail ] , N ):-      % if Head 0, then add to zeros
     countZeros( Tail , NC ),          % check recursively
     N is NC + 1.                      % add one for each zero
-countZeros( [ Head | Tail ] , N ):-   % if Head is not 0, then keep checking
+countZeros( [ _ | Tail ] , N ):-      % if Head is not 0, then keep checking
     countZeros( Tail , NC ),          % check recursively
     N is NC.                          % if no zero, then count remains the same
 
@@ -58,15 +58,17 @@ testU2(X):-                  % Result: [10,20,30,40]
 testU3(X):-                  % Result: [10,20,30]
     union([],[10,20,30],X).
 
-testCZ1(X):-                          % return 4
-    countZeros([0,0,0,0,1,2,3,4], X).
-testCZ2(X):-                          % return 1
-    countZeros([02,0,05,2,4,3,1], X).
+testCZ1(X):-                          % return 2
+    countZeros([2,0,6,9,0,10,20], X).
+testCZ2(X):-                          % return 0
+    countZeros([1,2,3,10,20], X).
 testCZ3(X):-                          % return 0
-    countZeros([02,1,05,2,4,3,1], X).
+    countZeros([], X).
 
-testSum1(X):-                         % return 10
-    sumAll([1,2,3,4], X).
-testSum2(X):-                         % return 25
-    sumAll([5,5,5,5,5], X).
+testSA1(X):-                          % return 0
+    sumAll([], X).
+testSA2(X):-                          % return 20
+    sumAll([2,4,6,8], X).
+testSA3(X):-                          % return 3
+    sumAll([3], X).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
