@@ -14,7 +14,7 @@ inter( [] , _ , [] ).                  % if 'List 1' is empty, done
 inter( [ Head | Tail_1 ] , List_2 , [ Head | List_3 ] ):-
     memberOf( Head , List_2 ),         % if the head of 'List 1' is in 'List 2'
     !,                                 % cut the results of 'List 1'
-    inter( Tail_1 , List_2 , List_3 ). % continue checking for the remainder
+    inter( Tail_1 , List_2 , List_3 ). % continue checking the remainder
 inter( [ _ | Tail_1 ] , List_2 , List_3 ):-
     inter( Tail_1 , List_2 , List_3 ). % keep trying to find intersections
 
