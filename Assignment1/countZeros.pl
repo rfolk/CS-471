@@ -15,9 +15,11 @@ countZeros( [ Head | Tail ] , N ):-   % if Head is not 0, then keep checking
     countZeros( Tail , NC ),          % check recursively
     N is NC.                          % if no zero, then count remains the same
 
-testCZ1(X):-                          % test case, should return 4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+testCZ1(X):-                          % return 4
     countZeros([0,0,0,0,1,2,3,4], X).
-testCZ2(X):-                          % test case, should return 1
+testCZ2(X):-                          % return 1
     countZeros([02,0,05,2,4,3,1], X).
-testCZ3(X):-                          % test case, should return 0
+testCZ3(X):-                          % return 0
     countZeros([02,1,05,2,4,3,1], X).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
