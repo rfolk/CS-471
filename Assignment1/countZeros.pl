@@ -1,8 +1,11 @@
-% Russell Folk
-% CS471: Assignment 1
-
-% Count the number of zeros in a given list and return the value N based on the
-% number counted, NC, using the recursive solution.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Russell Folk                                                                %
+% CS471: Assignment 1                                                         %
+% 7 September 2013                                                            %
+%                                                                             %
+% Count the number of zeros in a given list and return the value N based on   %
+% the number counted, NC, using the recursive solution.                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 countZeros( [] , 0 ).                 % if no numbers, then 0 zeros
 countZeros( [ 0 | Tail ] , N ):-      % if Head 0, then add to zeros

@@ -1,7 +1,10 @@
-% Russell Folk
-% CS471: Assignment 1
-
-% Sum all the numbers in a list and return the value N.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Russell Folk                                                                %
+% CS471: Assignment 1                                                         %
+% 7 September 2013                                                            %
+%                                                                             %
+% Sum all the numbers in a list and return the value N.                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sumAll( [] , 0 ).             % if no numbers, then N is 0.
 sumAll( [Head | Tail] , N ):- % if numbers, count recursively.
