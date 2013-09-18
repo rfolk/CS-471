@@ -14,6 +14,7 @@ equal( [ Head | Tail ] ):-
     !,
     equal( Tail ).              % check all elements in tail
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 testEq1(_):-                    % return yes
     equal( [ 1 , 1 , 1 , 1 ] ).
 testEq2(_):-                    % return no
@@ -26,3 +27,4 @@ testEq5(_):-                    % return yes
     equal( [] ).
 testEq6(_):-                    % return no
     equal( [ 3 , 2 , 3 , 3 , 3 ] ).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

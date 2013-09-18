@@ -12,6 +12,7 @@ element( N , [ _ | Tail ] , E ):-
     Nm1 is N - 1,                   % N is N minus 1
     element( Nm1 , Tail , E ).      % recurse
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 testEl1( X ):-                      % X is 12
   element( 6 , [ 2 , 4 , 5 , 9 , 10 , 12 ] , X ).
 testEl2( X ):-                      % X is 2
@@ -24,3 +25,4 @@ testEl5( X ):-                      % X is 9
   element( 4 , [ 2 , 3 , 5 , 9 ] , X ).
 testEl6( X ):-                      % X is 2
   element( 1 , [ 2 ] , X ).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
