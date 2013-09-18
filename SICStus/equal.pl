@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Russell Folk                                                                %
 % CS471: Assignment 2                                                         %
-% 12 September 2013                                                           %
+% 17 September 2013                                                           %
 %                                                                             %
 % Check if every item inside the list is equal and return yes if true and no  %
 % otherwise.                                                                  %

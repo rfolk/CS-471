@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Russell Folk                                                                %
 % CS471: Assignment 2                                                         %
-% 12 September 2013                                                           %
+% 17 September 2013                                                           %
 %                                                                             %
 % Given an integer N and a list L, set integer E to be the element at         %
 % position N (starts at 1) in the list.                                       %

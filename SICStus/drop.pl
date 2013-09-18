@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Russell Folk                                                                %
 % CS471: Assignment 2                                                         %
-% 12 September 2013                                                           %
+% 17 September 2013                                                           %
 %                                                                             %
 % Given a specified number of elements N, drop that many from the front of a  %
 % given list L1. Store the resulting list in L2.                              %

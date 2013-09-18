@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Russell Folk                                                                %
 % CS471: Assignment 2                                                         %
-% 12 September 2013                                                           %
+% 17 September 2013                                                           %
 %                                                                             %
 % Given specified numbers M and N, create an inclusive list of integers L     %
 % from M to N.                                                                %
