@@ -4,6 +4,8 @@ Programming Languages Structure I
 *[C S 471](http://www.cs.nmsu.edu/wp13/undergrad-courses/) is an Undergraduate course taught at NMSU that I took my Senior Year of
 studies during the fall 2013 semester.*
 
+**To run SICStus using base install, /usr/local/sicstus4.2.3/bin/sicstus**
+
 The assignments contained in this repository are simple tasks meant to build
 our familiarity with a variety of different programming languages and
 programming paradigms.
