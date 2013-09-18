@@ -7,14 +7,20 @@
 % given list L1. Store the resulting list in L2.                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-drop( 0 , [] , [] ).
-drop( 0 , List , Rem ):-
-    copy ( List , Rem ).
-drop( N , [ Head | Tail ] , Rem ):-
-    N is NR - 1,
-    drop( NR , Tail , Rem ).
+drop( 0 , List , List ).              % if element is 0, return list
+drop( N , [ _ | Tail ] , List ):-  % else, recurse
+    Nm1 is N - 1,
+    drop( Nm1 , Tail , List ).
 
-copy( [] , [] ).
-copy( X , X ).
-copy( [ Head | Tail_1 ] , [ Head | Tail_2 ] ):-
-    copy( Tail_1 , Tail_2 ).
+testDr1(X):-                          % return [4,6]
+    drop( 1 , [ 2 , 4 , 6 ] , X ).
+testDr2(X):-                          % return [6]
+    drop( 2 , [ 2 , 4 , 6 ] , X ).
+testDr3(X):-                          % return []
+    drop( 3 , [ 2 , 4 , 6 ] , X ).
+testDr4(X):-                          % return [8,10]
+    drop( 3 , [ 2 , 4 , 6 , 8 , 10 ] , X ).
+testDr5(X):-                          % return [10,12,14]
+    drop( 4 , [ 2 , 4 , 6 , 8 , 10 , 12 , 14 ] , X ).
+testDr6(X):-                          % return []
+    drop( 7 , [ 2 , 4 , 6 , 8 , 10 , 12 , 14 ] , X ).
