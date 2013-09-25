@@ -8,14 +8,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 remove_duplicates( [ ] , Output ):-
-    append( [ ] , [ ] , Output ).
+    append( [ ] , [ ] , Output ).               % if empty, append empty
 remove_duplicates( [ Head | Tail ] , Output ):-
-    member( Head , Tail ),
-    remove_duplicates( Tail , Output ).
+    member( Head , Tail ),                      % Head is a duplicate
+    remove_duplicates( Tail , Output ).         % continue with rest of list
 remove_duplicates( [ Head | Tail ] , Output ):-
-    \+member( Head , Tail ),
-    remove_duplicates( Tail , Clean ),
-    append( [ Head ] , Clean , Output ).
+    \+member( Head , Tail ),                    % Head is not a duplicate
+    remove_duplicates( Tail , Clean ),          % recurse through list
+    append( [ Head ] , Clean , Output ).        % append Head to list
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
