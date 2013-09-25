@@ -17,7 +17,6 @@ remove_duplicates( [ Head | Tail ] , Output ):-
     remove_duplicates( Tail , Clean ),          % recurse through list
     append( [ Head ] , Clean , Output ).        % append Head to list
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 testRD1(L):-                          % return [ 2 , 1 ]
     remove_duplicates( [ 1 , 2 , 1 ] , L ).
