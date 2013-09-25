@@ -6,13 +6,13 @@
 % Given a list 'L', check to see if the elements are in assorting order.      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sorted( [ ] ).              % if the list is empty, is sorted
-sorted( [ _ ] ).            % if one element in list, is sorted
-sorted( [ H1 , H2 ] ):-     % if two elements, check sorted
-    H1 < H2.                % if ascending, is sorted
-sorted( [ H1 , H2 | T ] ):- % if more than 2, recurse to check sorted
-    H1 < H2,                % check ascending
-    sorted( [ H2 | T ] ).   % recurse
+sorted( [ ] ).                        % if the list is empty, is sorted
+sorted( [ _ ] ).                      % if one element in list, is sorted
+sorted( [ Head1 , Head2 ] ):-         % if two elements, check sorted
+    Head1 < Head2.                    % if ascending, is sorted
+sorted( [ Head1 , Head2 | Tail ] ):-  % if more than 2, recurse to check sorted
+    Head1 < Head2,                    % check ascending
+    sorted( [ Head2 | Tail ] ).       % recurse
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% test case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 testSo1(_):-                          % return yes
