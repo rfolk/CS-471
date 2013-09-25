@@ -3,8 +3,8 @@
 % CS471: Assignment 3                                                         %
 % 24 September 2013                                                           %
 %                                                                             %
-% Given a List 'source' of integers, remove all duplicates from source and    %
-% and return List 'output'.                                                   %
+% Given a List 'Source' of integers, remove all duplicates from source and    %
+% and return List 'Output'.                                                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 remove_duplicates( [ ] , Output ):-

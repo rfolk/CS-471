@@ -3,7 +3,7 @@
 % CS471: Assignment 3                                                         %
 % 24 September 2013                                                           %
 %                                                                             %
-% Given a list 'L', check to see if the elements are in assorting order.      %
+% Given a list 'Source', check to see if the elements are in assorting order. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sorted( [ ] ).                        % if the list is empty, is sorted

@@ -3,7 +3,7 @@
 % CS471: Assignment 3                                                         %
 % 24 September 2013                                                           %
 %                                                                             %
-% Given a List 'source' take and reverse the elements in the list and store   %
+% Given a List 'Source' take and reverse the elements in the list and store   %
 % in a new list 'Output' then return list 'Output'.                           %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
