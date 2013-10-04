@@ -2,9 +2,11 @@
 
 """CS471: Assignment 4
 Russell Folk
-30 September 2013
+4 October 2013
 
 Part 2: Calculate the Euclidean Distance of 2 lists of numbers.
+Part 3: Calculate the sum of the series 1/2^i
+Part 4: Calculate the sum and return the list of values for the above series
 
 """
 
@@ -33,3 +35,16 @@ def series(X):
         total += 1 / denom
     return total
 
+def tuple(X):
+    """
+    Calculate the sum of 1/2^i where i = 1,n
+    Return the sum and the list of values
+    """
+    if X < 1:
+        raise Exception
+    total , denom , result = 0 , 1 , []
+    for x in range ( 1 , X + 1 ):
+        denom *= 2
+        result.append(1 / denom)
+        total += result[-1]
+    return (total , result)
