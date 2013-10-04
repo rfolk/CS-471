@@ -10,6 +10,9 @@ Part 4: Calculate the sum and return the list of values for the above series
 
 """
 
+# Because I can and because it's awesome.
+import antigravity
+
 def euclideanDistance( X , Y ):
     """
     Returns the Euclidean Distance of 2 lists of numbers
