@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 import unittest
-from euclidean_distance import euclideanDistance
+from assignment_4 import euclideanDistance
+from assignment_4 import series
 
 class TestAssignment4(unittest.TestCase):
 
@@ -20,6 +21,19 @@ class TestAssignment4(unittest.TestCase):
         test = [t2_1 , t2_2 , t2_3 , t2_4 , t2_5 , t2_6 , t2_7 , t2_8]
         for x in test :
             self.assertEqual( euclideanDistance(x[1][0] , x[1][1] ) , x[0] )
+
+    def test_series_sum(self):
+        t3_1 = [ 1 , 0.5 ]
+        t3_2 = [ 2 , 0.75 ]
+        t3_3 = [ 3 , 0.875 ]
+        t3_4 = [ 4 , 0.9375 ]
+        t3_5 = [ 5 , 0.96875 ]
+        t3_6 = [ 6 , 0.984375 ]
+        t3_7 = [ 7 , 0.9921875 ]
+        t3_8 = [ 8 , 0.99609375 ]
+        test = [ t3_1 , t3_2 , t3_3 , t3_4 , t3_5 , t3_6 , t3_7 , t3_8 ]
+        for x in test :
+            self.assertEqual( series(x[0]) , x[1] )
 
 if __name__ == '__main__' :
     unittest.main()

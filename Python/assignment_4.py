@@ -21,3 +21,15 @@ def euclideanDistance( X , Y ):
         total += ( Xn - Yn ) ** 2
     return total ** 0.5
 
+def series(X):
+    """
+    Calculate the sum of 1/2^i where i = 1,n
+    """
+    if X < 1:
+        raise Exception
+    total , denom = 0 , 1
+    for x in range ( 1 , X + 1 ):
+        denom *= 2
+        total += 1 / denom
+    return total
+
