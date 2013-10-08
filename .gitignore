@@ -1,3 +1,6 @@
 # Document Folders and Files
 docs/
 *.pdf
+
+# Misc Python Stuff
+python/__pycache__/
