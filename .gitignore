@@ -3,4 +3,4 @@ docs/
 *.pdf
 
 # Misc Python Stuff
-python/__pycache__/
+__pycache__
