@@ -5,8 +5,8 @@ Russell Folk
 15 October 2013
 
 Part 1: Calculate log2(X)
-Part 3: Calculate the sum of the series 1/2^i
-Part 4: Calculate the sum and return the list of values for the above series
+Part 2: Calculate various functions of n
+Part 3: Graph the other parts
 
 """
 
@@ -43,7 +43,7 @@ def f3(n):
     if isinstance(n, int) == False:
         return "Not an integer!"
     answer = round(n*log2(n), 1)
-    return "nlog(" + str(n) + ")=" + str(answer)
+    return str(n) + "log(" + str(n) + ")=" + str(answer)
 
 def f4(n):
     """
@@ -88,10 +88,10 @@ def printGraph(f, g, n):
     for x in range(1, n + 1):
         print(f(x).ljust(20) + " " + g(x).ljust(20))
 
-printGraph(f1,f3,9)
-print()
-printGraph(f2,f1,9)
-print()
-printGraph(f5,f6,6)
-print()
-printGraph(f6,f7,7)
+#printGraph(f1,f3,9)
+#print()
+#printGraph(f2,f1,9)
+#print()
+#printGraph(f5,f6,6)
+#print()
+#printGraph(f6,f7,7)
