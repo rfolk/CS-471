@@ -81,3 +81,17 @@ def f7(n):
     answer = n ** n
     return str(n) + "^" + str(n) + "=" + str(answer)
 
+def printGraph(f, g, n):
+    """
+    Prints a graph of two functions from 1 to n
+    """
+    for x in range(1, n + 1):
+        print(f(x).ljust(20) + " " + g(x).ljust(20))
+
+printGraph(f1,f3,9)
+print()
+printGraph(f2,f1,9)
+print()
+printGraph(f5,f6,6)
+print()
+printGraph(f6,f7,7)
