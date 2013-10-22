@@ -26,3 +26,9 @@ def selection_sort(L):
         if mi+i != i: # need to adjust min index for position in list
             L[i], L[mi+i] = L[mi+i], L[i]
     return L
+
+def partitions(L, n):
+    new_list = []
+    for x in range(0, len(L), n): # step by given parameter
+        new_list.append(L[x:x+n]) # append slice
+    return new_list
