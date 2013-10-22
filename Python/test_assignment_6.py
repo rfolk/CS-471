@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 import unittest
-from assignment_6 import min_index, selection_sort, partitions, my_row
+from assignment_6 import min_index, selection_sort, partitions
+from assignment_6 import my_row, my_col
 
 class Test_Assignment_6(unittest.TestCase):
 
@@ -59,6 +60,21 @@ class Test_Assignment_6(unittest.TestCase):
         tests = [test_1, test_2, test_3, test_4]
         for x in tests:
             self.assertEqual(my_row(mat, x[0]), x[1])
+
+    def test_my_col(self):
+        mat = [
+                [1, 2, 3, 5],
+                [4, 5, 6, 7],
+                [7, 8, 9, 9],
+                [0, 1, 2, 3]
+              ]
+        test_1 = [0, [1, 4, 7, 0]]
+        test_2 = [1, [2, 5, 8, 1]]
+        test_3 = [2, [3, 6, 9, 2]]
+        test_4 = [3, [5, 7, 9, 3]]
+        tests = [test_1, test_2, test_3, test_4]
+        for x in tests:
+            self.assertEqual(my_col(mat, x[0]), x[1])
 
 if __name__ == '__main__' :
     unittest.main()
