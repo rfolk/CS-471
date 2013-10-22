@@ -3,6 +3,7 @@
 import unittest
 from assignment_6 import min_index
 from assignment_6 import selection_sort
+from assignment_6 import partitions
 
 class Test_Assignment_6(unittest.TestCase):
 
@@ -44,7 +45,7 @@ class Test_Assignment_6(unittest.TestCase):
         cases = [case_1, case_2, case_3, case_4]
         rslts = [rslt_1, rslt_2, rslt_3, rslt_4]
         for cx, rx in zip(cases, rslts):
-            self.assertEqual(partitions(cx), rx)
+            self.assertEqual(partitions(cx[0], cx[1]), rx)
 
 if __name__ == '__main__' :
     unittest.main()
