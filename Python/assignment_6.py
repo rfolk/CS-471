@@ -18,3 +18,11 @@ Part 6: Calculate the dot product
 def min_index(L):
     return L.index(min(L))
 
+def selection_sort(L):
+    for i in range(len(L)):
+        # find the min index of the remaining list
+        mi = min_index(L[i:])
+        # check if the min index is in the right place or swap
+        if mi+i != i: # need to adjust min index for position in list
+            L[i], L[mi+i] = L[mi+i], L[i]
+    return L
