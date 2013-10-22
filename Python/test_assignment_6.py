@@ -2,7 +2,7 @@
 
 import unittest
 from assignment_6 import min_index, selection_sort, partitions
-from assignment_6 import my_row, my_col
+from assignment_6 import my_row, my_col, dot_product
 
 class Test_Assignment_6(unittest.TestCase):
 
