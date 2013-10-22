@@ -76,5 +76,14 @@ class Test_Assignment_6(unittest.TestCase):
         for x in tests:
             self.assertEqual(my_col(mat, x[0]), x[1])
 
+    def test_dot_product(self):
+        test_1 = [[1, 4, 7], [2, 5, 8], 78]
+        test_2 = [[3, 6, 9], [2, 4, 8], 102]
+        test_3 = [[2, 6], [8, 9], 70]
+        test_4 = [[2], [8], 16]
+        tests = [test_1, test_2, test_3, test_4]
+        for x in tests:
+            self.assertEqual(dot_product(x[0], x[1]), x[2])
+
 if __name__ == '__main__' :
     unittest.main()
