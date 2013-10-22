@@ -43,3 +43,7 @@ def my_row(mat, n):
 def my_col(mat, n):
     """ return col n from given matrix """
     return [row[n] for row in mat] # for each row, extract col n
+
+def dot_product(v1, v2):
+    """ return the dot product of two vectors """
+    return sum(x1 * x2 for x1, x2 in zip(v1, v2))
