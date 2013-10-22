@@ -1,9 +1,7 @@
 #!/usr/bin/python
 
 import unittest
-from assignment_6 import min_index
-from assignment_6 import selection_sort
-from assignment_6 import partitions
+from assignment_6 import min_index, selection_sort, partitions, my_row
 
 class Test_Assignment_6(unittest.TestCase):
 
@@ -46,6 +44,21 @@ class Test_Assignment_6(unittest.TestCase):
         rslts = [rslt_1, rslt_2, rslt_3, rslt_4]
         for cx, rx in zip(cases, rslts):
             self.assertEqual(partitions(cx[0], cx[1]), rx)
+
+    def test_my_row(self):
+        mat = [
+                [1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9],
+                [0, 1, 2]
+              ]
+        test_1 = [0, [1, 2, 3]]
+        test_2 = [1, [4, 5, 6]]
+        test_3 = [2, [7, 8, 9]]
+        test_4 = [3, [0, 1, 2]]
+        tests = [test_1, test_2, test_3, test_4]
+        for x in tests:
+            self.assertEqual(my_row(mat, x[0]), x[1])
 
 if __name__ == '__main__' :
     unittest.main()
