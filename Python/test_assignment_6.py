@@ -32,5 +32,19 @@ class Test_Assignment_6(unittest.TestCase):
         for cx, sx in zip(cases, sorts):
             self.assertEqual(selection_sort(cx), sx)
 
+    def test_partitions(self):
+        case_1 = [[2, 4, 6, 8, 10, 12, 14, 16], 2]
+        rslt_1 = [[2, 4], [6, 8], [10, 12], [14, 16]]
+        case_2 = [[2, 4, 6, 8, 10, 12, 14, 16], 3]
+        rslt_2 = [[2, 4, 6], [8, 10, 12], [14, 16]]
+        case_3 = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 5]
+        rslt_3 = [[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]]
+        case_4 = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 3]
+        rslt_4 = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]
+        cases = [case_1, case_2, case_3, case_4]
+        rslts = [rslt_1, rslt_2, rslt_3, rslt_4]
+        for cx, rx in zip(cases, rslts):
+            self.assertEqual(partitions(cx), rx)
+
 if __name__ == '__main__' :
     unittest.main()
