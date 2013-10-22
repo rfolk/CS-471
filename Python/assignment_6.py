@@ -39,3 +39,7 @@ def partitions(L, n):
 def my_row(mat, n):
     """ return row n from given matrix """
     return mat[n]
+
+def my_col(mat, n):
+    """ return col n from given matrix """
+    return [row[n] for row in mat] # for each row, extract col n
