@@ -36,3 +36,6 @@ def partitions(L, n):
         new_list.append(L[x:x+n]) # append slice
     return new_list
 
+def my_row(mat, n):
+    """ return row n from given matrix """
+    return mat[n]
