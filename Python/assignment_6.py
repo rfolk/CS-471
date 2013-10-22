@@ -16,9 +16,11 @@ Part 6: Calculate the dot product
 """
 
 def min_index(L):
+    """ return the index of the minimum value in a list """
     return L.index(min(L))
 
 def selection_sort(L):
+    """ sort a list using selection sort algorithm """
     for i in range(len(L)):
         # find the min index of the remaining list
         mi = min_index(L[i:])
@@ -28,7 +30,9 @@ def selection_sort(L):
     return L
 
 def partitions(L, n):
+    """ partition a list into slices of n size """
     new_list = []
     for x in range(0, len(L), n): # step by given parameter
         new_list.append(L[x:x+n]) # append slice
     return new_list
+
