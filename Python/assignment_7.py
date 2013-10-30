@@ -33,3 +33,6 @@ def vector_sum_bad(u, v):
         S.append(u[i] + v[i])
     return S
 
+def vector_sum(U, V):
+    """ Sum vectors u and v """
+    return [u + v for u, v in zip(U, V)]

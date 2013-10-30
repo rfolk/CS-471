@@ -3,7 +3,7 @@
 import unittest
 
 from assignment_7 import scalar_product, scalar_product_bad
-from assignment_7 import vector_sum_bad
+from assignment_7 import vector_sum, vector_sum_bad
 
 class Test_Assignment_7(unittest.TestCase):
 
@@ -30,6 +30,7 @@ class Test_Assignment_7(unittest.TestCase):
         tests = [case_1, case_2, case_3, case_4]
         for t in tests:
             self.assertEqual(vector_sum_bad(t[0], t[1]), t[2])
+            self.assertEqual(vector_sum(t[0], t[1]), t[2])
 
 if __name__ == '__main__' :
     unittest.main()
