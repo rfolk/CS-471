@@ -18,10 +18,18 @@ Part 6: Part 5, list comprehension
 def scalar_product_bad(S, V):
     """ Make a dummy list to do what will be done better """
     L = []
-    for i in range (len(V)):
+    for i in range(len(V)):
         L.append(S * V[i])
     return L
 
 def scalar_product(S, V):
     """ Lets scale a vector the right way..."""
     return [S * v for v in V]
+
+def vector_sum_bad(u, v):
+    """ This is so pointless... -_- """
+    S = []
+    for i in range(len(u)):
+        S.append(u[i] + v[i])
+    return S
+
