@@ -36,3 +36,18 @@ def vector_sum_bad(u, v):
 def vector_sum(U, V):
     """ Sum vectors u and v """
     return [u + v for u, v in zip(U, V)]
+
+def matrix_sum_bad(M, N):
+    """ Sum a matrix the idiotic way """
+    S = []
+    for i in range(len(M)):
+        S.append(vector_sum(my_row(M, i), my_row(N, i)))
+    return S
+
+def matrix_sum(M, N):
+    """ Sum a matrix """
+    return [[m + n for m, n in zip(row_m, row_n)] for row_m, row_n in zip(M, N)]
+
+def my_row(mat, n):
+    """ return row n from given matrix """
+    return mat[n]
