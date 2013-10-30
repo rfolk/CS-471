@@ -2,7 +2,7 @@
 
 import unittest
 
-from assignment_7 import scalar_product
+from assignment_7 import scalar_product, scalar_product_bad
 
 class Test_Assignment_7(unittest.TestCase):
 
@@ -17,6 +17,7 @@ class Test_Assignment_7(unittest.TestCase):
         case_4 = [1, V]
         tests = [case_1, case_2, case_3, case_4]
         for x in tests:
+            self.assertEqual(scalar_product_bad(x[0], V), x[1])
             self.assertEqual(scalar_product(x[0], V), x[1])
 
 if __name__ == '__main__' :
